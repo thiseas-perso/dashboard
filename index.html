@@ -5,12 +5,63 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+   <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="style.css">
    <title>Dashboard</title>
 </head>
 
 <body>
+   <main class="container">
+      <aside class="sidebar">
+         <div class="logo">
+            <span class="material-icons">
+               dashboard
+            </span>
+            <h1>Dashboard</h1>
+         </div>
+         <nav class="nav">
+            <div class="nav-top">
+               <span class="material-icons top-left">home</span>
+               <div class="top-right">Home</div>
+               <span class="material-icons top-left">person</span>
+               <div class="top-right">Profile</div>
+               <span class="material-icons top-left">mode_comment</span>
+               <div class="top-right">Messages</div>
+               <span class="material-icons top-left">history</span>
+               <div class="top-right">History</div>
+               <span class="material-icons top-left">task</span>
+               <div class="top-right">Tasks</div>
+               <span class="material-icons top-left">groups</span>
+               <div class="top-right">Communities</div>
+            </div>
+            <div class="nav-bottom">
+               <span class="material-icons bottom-left">settings</span>
+               <div class="bottom-right">Settings</div>
+               <span class="material-icons bottom-left">help_center</span>
+               <div class="bottom-right">Support</div>
+               <span class="material-icons bottom-left">verified_user</span>
+               <div class="bottom-right">Privacy</div>
+            </div>
+         </nav>
+      </aside>
+      <header class="header">
 
+         <div class="search-bar">
+            <span class="material-icons">search</span>
+            <input type="search" name="" id="search">
+         </div>
+         <div class="head-shortcuts">
+            <span class="material-icons-outlined">notifications_active</span>
+            <img src="./profile.png" alt="" id="profile-img-sm">
+            <span id="name-sm">FirstName LastName</span>
+         </div>
+
+      </header>
+      <article class="article"></article>
+   </main>
 </body>
 
 </html>
