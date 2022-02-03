@@ -121,3 +121,27 @@ input[type="search"]{
    border-radius: 20px;
    line-height: 2rem;
 }
+
+.cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.article{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+}
+
+.trending{
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   align-items: center;
+   gap: 10px;
+}
+
+.trending img{
+   justify-self: end;
+}
+.trending p{
+   margin: 0;
+}
