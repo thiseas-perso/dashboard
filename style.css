@@ -20,7 +20,7 @@ h1, h2{
  }
 
 .article{
-   background-color: rgb(225, 225, 225);
+   background-color: rgb(208, 210, 218);
    grid-column: 2 / 3;
 }
 
@@ -35,10 +35,7 @@ h1, h2{
    display: grid;
    grid-template-columns: 1fr 4fr;
    gap: 10px;
-   margin-bottom: 50px;
-   margin-top: 25px;
-   margin-left: 25px;
-   margin-right: 25px;
+   margin: 50px 25px 25px 25px;
 }
 
 .nav-top, .nav-bottom{
@@ -56,21 +53,71 @@ nav div div{
    background-color: whitesmoke;
    display: grid;
    grid-template-columns: 2fr 1fr;
+   padding: 15px 45px;
+   gap: 15px;
 }
 
-.search-bar, .head-shortcuts{
+.search-bar, 
+.head-shortcuts, 
+.head-welcome,
+.buttons{
    display: flex;
    align-items: center;
+   gap: 10px;
 }
+.head-shortcuts, 
+.buttons{
+   justify-content: flex-end;
+   
+}
+
 #search{
    width: 100%;
 }
 
-#profile-img-sm{
+.profile-img-sm{
    width: 45px;
+}
+#profile-img-lg{
+   width: 65px;
 }
 
 #name-sm{
    font-size: 1rem;
    font-weight: 600;
+}
+
+#welcome{
+   font-weight: 700;
+}
+
+#name-lg{
+   font-weight: 700;
+   font-size: 1.2rem;
+}
+
+.head-welcome p{
+   margin: 10px 0;
+}
+
+button{
+   border: none;
+   padding: 10px 25px;
+   border-radius: 15px;
+   margin: 0 10px;
+   background-color: rgb(74, 166, 237);
+   color: whitesmoke;
+   transition: 0ms;
+}
+
+button:hover{
+   background-color: rgb(24, 134, 218);
+   cursor: pointer;
+}
+
+input[type="search"]{
+   background-color: rgb(208, 210, 218);
+   border: none;
+   border-radius: 20px;
+   line-height: 2rem;
 }
